@@ -1,0 +1,84 @@
+/* BODY */
+
+/*APLICACION GENERAL DE MARGENES Y PADDING*/
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* APLICACION A TODO EL CUERPO DE LA PAGINA */
+body { 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: brown;
+    background-color: bisque;
+}
+
+/*ENCABEZADO*/
+
+header {
+    background-color: brown;
+    color:rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+}
+
+header p {
+    font-style: italic;
+}
+
+header ul {
+    list-style: none;
+    margin-top: 10px;
+    display: flex; /* Ubica de manera horizontal los items de la lista */
+    justify-content:center ;
+}
+
+header li a{
+    color: bisque;
+    text-decoration: none; /* Saca el subrayado del link */
+    padding: 20px;
+}
+
+/* EFECTO ESEPCIAL PARA PASAR EL CURSOR SOBRE EL LINK Y QUE CAMBIE AL FORMATO ESTABLECIDO*/
+header li a:hover {
+    color:rgb(255, 188, 87);
+    
+}
+
+/* ONTENIDO PRINCIPAL */
+
+main {
+    padding: 20px;
+}
+
+section h3 {
+    color: black;
+}
+
+section ol {
+    display: grid;
+    list-style: none;
+}
+
+section ol li {
+    background-color:beige;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+section ol li img {
+    border-radius: 10px;
+    margin-top: 10px;
+}
+/* FOOTER */
+
+footer {
+    background-color: #333;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
+}
