@@ -16,37 +16,59 @@ body {
 
 /*ENCABEZADO*/
 
+.contenedor-encabezado { /* Con esta clase se da estilo a los elementos que contiene el encabezado, en este caso el H1 y el div */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 header {
     background-color: brown;
     color:rgb(255, 255, 255);
     padding: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 header p {
     font-style: italic;
 }
 
-header ul {
+/* NAV */
+nav {
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+nav ul {
+    display: flex;
     list-style: none;
-    margin-top: 10px;
-    display: flex; /* Ubica de manera horizontal los items de la lista */
-    justify-content:center ;
+    padding: 0;
+    margin: 0;
+    gap: 20px; /* Propiedad que separa elementos*/
 }
 
-header li a{
-    color: bisque;
+nav li {
+    background-color: antiquewhite;
+    font-weight: bold;
+    border-radius: 10px;
     text-decoration: none; /* Saca el subrayado del link */
-    padding: 20px;
+    padding: 10px;
+    align-items: center;
 }
 
-/* EFECTO ESEPCIAL PARA PASAR EL CURSOR SOBRE EL LINK Y QUE CAMBIE AL FORMATO ESTABLECIDO*/
-header li a:hover {
+nav a {
+    text-decoration: none;
+    color:brown;
+    transition: color 0.3s ease; /* Cambia de color en una transicion configurada, 3 segundos */
+}
+
+/* EFECTO ESPECIAL PARA PASAR EL CURSOR SOBRE EL LINK Y QUE CAMBIE AL FORMATO ESTABLECIDO*/
+nav li a:hover {
     color:rgb(255, 188, 87);
     
 }
-
-/* ONTENIDO PRINCIPAL */
+/* CONTENIDO PRINCIPAL */
 
 main {
     padding: 20px;
@@ -74,6 +96,8 @@ section ol li img {
     border-radius: 10px;
     margin-top: 10px;
 }
+
+
 /* FOOTER */
 
 footer {
